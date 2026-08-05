@@ -1,0 +1,176 @@
+# ═══════════════════════════════════════════════════════════════
+#  Signals — 수집 소스 설정
+#  여기만 고치면 크롤링 대상이 바뀝니다. 코드는 건드리지 않아도 됩니다.
+# ═══════════════════════════════════════════════════════════════
+
+# ── 관심 키워드 ────────────────────────────────────────────────
+# 가중치가 높을수록 우선 노출됩니다.
+# 항목 하나라도 걸리지 않으면 수집에서 제외됩니다.
+keywords:
+  core:            # 가중치 3 — 나의 핵심 연구 영역
+    - vision language model
+    - multimodal
+    - world model
+    - physical ai
+    - embodied
+    - video generation
+    - frame interpolation
+    - inbetweening
+    - self-play
+    - knowledge graph
+    - ai for science
+    - 3d reconstruction
+    - cad
+    - blueprint
+    - floor plan
+
+  adjacent:        # 가중치 2 — 인접 영역
+    - diffusion
+    - vlm
+    - mllm
+    - robot manipulation
+    - scene understanding
+    - remote sensing
+    - point cloud
+    - animation
+    - controllable generation
+    - reinforcement learning
+    - reasoning
+
+  korean:          # 가중치 2 — 국내 기사용 한글 키워드
+    - 멀티모달
+    - 비전 언어
+    - 월드 모델
+    - 피지컬 AI
+    - 로봇
+    - 생성 AI
+    - 파운데이션 모델
+    - 자율주행
+    - 디지털 트윈
+    - 과학기술 AI
+    - 산업 AI
+
+  exclude:         # 이 단어가 제목에 있으면 버림 (홍보·잡음 제거)
+    - webinar
+    - 웨비나
+    - 채용
+    - 이벤트 안내
+    - 할인
+    - coupon
+
+# ── arXiv ──────────────────────────────────────────────────────
+arxiv:
+  enabled: true
+  categories: [cs.CV, cs.AI, cs.LG, cs.RO, cs.GR, cs.CL]
+  max_per_category: 60
+  trust: high
+
+# ── Hugging Face ───────────────────────────────────────────────
+huggingface:
+  enabled: true
+  fetch: [models, datasets]
+  limit: 40
+  min_likes: 15          # 이 미만은 노이즈로 간주
+  trust: medium
+
+# ── RSS 피드 ───────────────────────────────────────────────────
+# region: global | kr      trust: high | medium
+# 접속이 안 되는 피드는 자동으로 건너뛰고 로그에 남깁니다.
+rss:
+  # ── 해외 · 연구기관/기업 공식 ──
+  - name: Google Research
+    url: https://research.google/blog/rss/
+    region: global
+    trust: high
+  - name: Google AI
+    url: https://blog.google/technology/ai/rss/
+    region: global
+    trust: high
+  - name: DeepMind
+    url: https://deepmind.google/blog/rss.xml
+    region: global
+    trust: high
+  - name: OpenAI
+    url: https://openai.com/news/rss.xml
+    region: global
+    trust: high
+  - name: Meta AI
+    url: https://ai.meta.com/blog/rss/
+    region: global
+    trust: high
+  - name: NVIDIA
+    url: https://blogs.nvidia.com/blog/category/deep-learning/feed/
+    region: global
+    trust: high
+  - name: Microsoft Research
+    url: https://www.microsoft.com/en-us/research/feed/
+    region: global
+    trust: high
+  - name: BAIR
+    url: https://bair.berkeley.edu/blog/feed.xml
+    region: global
+    trust: high
+  - name: MIT News AI
+    url: https://news.mit.edu/rss/topic/artificial-intelligence2
+    region: global
+    trust: high
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    region: global
+    trust: medium
+
+  # ── 국내 ──
+  - name: AI타임스
+    url: https://www.aitimes.com/rss/allArticle.xml
+    region: kr
+    trust: medium
+  - name: 전자신문
+    url: https://rss.etnews.com/Section901.xml
+    region: kr
+    trust: medium
+  - name: ZDNet Korea
+    url: https://feeds.feedburner.com/zdkorea
+    region: kr
+    trust: medium
+  - name: 디지털데일리
+    url: https://www.ddaily.co.kr/rss/allArticle.xml
+    region: kr
+    trust: medium
+  - name: 과학기술정보통신부
+    url: https://www.msit.go.kr/bbs/rss.do?sCode=user&mId=113&mPid=112
+    region: kr
+    trust: high
+  - name: ETRI 웹진
+    url: https://www.etri.re.kr/rss/press.xml
+    region: kr
+    trust: high
+
+# ── 학회 마감일 ────────────────────────────────────────────────
+# 자동 크롤링이 불안정한 영역이라 직접 관리합니다.
+# 날짜(YYYY-MM-DD)만 매년 갱신해 주세요.
+conferences:
+  - name: CVPR 2027
+    deadline: 2026-11-14
+    url: https://cvpr.thecvf.com/
+  - name: ICCV 2027
+    deadline: 2027-03-08
+    url: https://iccv.thecvf.com/
+  - name: NeurIPS 2026
+    deadline: 2026-05-15
+    url: https://neurips.cc/
+  - name: AAAI 2027
+    deadline: 2026-08-15
+    url: https://aaai.org/
+  - name: ICLR 2027
+    deadline: 2026-09-24
+    url: https://iclr.cc/
+  - name: SIGGRAPH 2027
+    deadline: 2027-01-20
+    url: https://www.siggraph.org/
+
+# ── 출력 설정 ──────────────────────────────────────────────────
+output:
+  max_items: 40           # 사이트에 실을 최대 개수
+  lookback_days: 7        # 며칠 이내 것만 수집
+  min_score: 3            # 이 점수 미만은 버림
+  seen_ttl_days: 90       # 중복 판정용 기록 보관 기간
