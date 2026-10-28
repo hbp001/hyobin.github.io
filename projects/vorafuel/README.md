@@ -1,6 +1,6 @@
 # VORAFuel result videos
 
-The results are embedded in the existing bilingual portfolio at `index.html#github`.
+The results are embedded in the existing flagship project lineup at `index.html#github`.
 The old project-page URL redirects to that section; there is no separate landing page.
 
 The two 36-second films show the same four selected validation examples. Actual
