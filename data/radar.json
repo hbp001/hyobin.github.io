@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-28T00:37:15.526969+00:00",
+  "count": 41,
+  "items": [
+    {
+      "url": "https://arxiv.org/abs/2610.35193",
+      "title": "Trustworthy Recursive Self-Improvement in the Era of Large Models: Foundation, Risks, Evaluation and Open Challenges",
+      "display_title": "자기개선 에이전트, 성능 점수보다 검증 체계를 먼저 설계하자",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "collected_at": "2026-10-28T00:00:00Z",
+      "reviewed_at": "2026-10-28T00:00:00Z",
+      "verification": "metadata-verified",
+      "authorship": "reading-note",
+      "categories": [
+        "agents",
+        "trust"
+      ],
+      "evidence_url": "https://arxiv.org/html/2610.35193v1#S7.SS2",
+      "summary": "대규모 모델의 재귀적 자기개선을 다루는 arXiv v1 서베이 읽기 노트. 진단·후보 생성·평가·적용뿐 아니라 개선 메커니즘 자체의 변경도 검토한다. 실제·지속적 개선, 제약 보존, 유효한 감독을 함께 평가해야 한다.",
+      "limitations": "학회·저널 게재 정보가 없는 프리프린트 서베이이며 성능 향상 실험 결과로 해석하면 안 된다. 좋은 후속 버전만으로 개선 절차 자체의 우월성을 주장할 수 없다. 본인 연구 실적이 아니다.",
+      "interview_question": "내부 점수가 향상돼도 배포하지 않아야 하는 경우는? 에이전트와 개선 알고리즘의 개선을 어떻게 분리 검증하며, 메모리까지 변경되면 롤백 범위는 어디까지인가?",
+      "application_idea": "설계 제안·미실행: 프롬프트와 메모리 버전 및 승인 근거를 기록하고 개발·승인·독립 보고 평가를 분리한다. 보안 회귀·비용·롤백을 추적하며 동일 초기 상태와 예산으로 개선 절차를 비교한다.",
+      "source_checked_at": "2026-10-28T00:37:15.526966+00:00",
+      "commentary_review": "reviewed"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35866",
+      "title": "Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153595+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.526995+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35864",
+      "title": "VibeVideoBench:Evaluating Multimodal Agents on Code-Driven Video Generation",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents",
+        "trust",
+        "multimodal",
+        "generation"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153617+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527014+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35850",
+      "title": "OSWAM: An Effective World Action Model with One-Step Action Generation",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153716+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527030+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35847",
+      "title": "Patient-specific rubric-based evaluation of large language models across longitudinal cancer care",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153735+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527046+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35845",
+      "title": "Work Agents: Systems, Capabilities, and Optimization",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents",
+        "training"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153770+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527060+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35832",
+      "title": "Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153842+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527074+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35823",
+      "title": "Back to Basics: A Skill-Centric Approach to Generalist Web Agents",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153913+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527088+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35817",
+      "title": "Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents",
+        "training"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153931+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527102+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35816",
+      "title": "Multimodal Concert Video Editing: System Design and Exploratory Evaluation",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "trust",
+        "multimodal"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153948+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527115+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35804",
+      "title": "Learning When to Commit: Schedule Distillation for Fast Diffusion Language Models",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-28T00:37:06.153981+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527129+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35801",
+      "title": "FOCUS: Active Critic Learning for Long-Horizon Language Model Agents",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154014+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527142+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35793",
+      "title": "Quantifying Claim Smoothing by LLM Research Agents",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154031+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527154+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35787",
+      "title": "Selective Tie Learning: Mitigating Spurious Correlations in Preference Optimization",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "training"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154048+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527167+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35773",
+      "title": "A Unified Arena for LLM Agents across Diverse Eurogame",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154099+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527180+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35767",
+      "title": "Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154117+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527194+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35757",
+      "title": "EEGaze: Multimodal Attention Prediction in Visual Search via EEG-Based Saliency Refinement",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "multimodal"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154191+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527208+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35756",
+      "title": "VidEdit3D: Flexible 3D Gaussian Editing with Video Diffusion",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154207+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527221+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35748",
+      "title": "Model Selection for Off-Policy Evaluation via Pairwise Bellman Validation",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154241+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527234+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35736",
+      "title": "Preference-Guided Cooperation in Multi-Objective Multi-Agent Reinforcement Learning",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents",
+        "training"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154292+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527248+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35733",
+      "title": "Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "training"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154311+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527261+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35727",
+      "title": "TRACE: Memory-Efficient Time Series Class-Incremental Learning via Temporal-Spectral Reconstruction",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154346+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527274+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35725",
+      "title": "The Watchtower Imperative: Lifespan-Calibrated Evaluation for Frontier AI",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154363+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527287+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35724",
+      "title": "MatAnyone-E: Sparse Memory Propagation for Efficient High-Resolution Video Matting",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154383+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527300+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35720",
+      "title": "Quantifying the failure of symmetry learning in linear diffusion models due to initialization and finite-sample effects",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154417+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527315+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35706",
+      "title": "Triage: Skip, Skim, or Refine Attention Tiles in Video Diffusion Transformers",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154495+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527328+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35704",
+      "title": "Explainable Multimodal AI Approach to Reduce Unnecessary Breast Biopsies",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "multimodal"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154512+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527341+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35698",
+      "title": "From Self-Confidence to Statistical Accuracy: Scaling Human-in-the-Loop Evaluation with Direct and LLM-Assisted Auditing",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154530+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527356+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35697",
+      "title": "MiRL: Error-Targeted Reinforcement Learning for Correcting Terminal Agent Misbehaviors",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents",
+        "training"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154547+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527369+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35690",
+      "title": "EvoRouter: Cost-Efficient Multi-Agent Routing via Insight-Guided On-Policy Distillation",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:06.154617+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527382+00:00"
+    },
+    {
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "title": "Securing our frontier model training environment",
+      "source": "official",
+      "published": "2026-10-23",
+      "categories": [
+        "training"
+      ],
+      "collected_at": "2026-10-28T00:37:09.269261+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527397+00:00"
+    },
+    {
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership/",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "source": "official",
+      "published": "2026-10-23",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-28T00:37:09.269346+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527413+00:00"
+    },
+    {
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "source": "official",
+      "published": "2026-10-21",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:09.269665+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527428+00:00"
+    },
+    {
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "source": "official",
+      "published": "2026-10-21",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:09.269593+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527443+00:00"
+    },
+    {
+      "url": "https://openai.com/index/building-chatgpt-ad-stack/",
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "source": "official",
+      "published": "2026-10-21",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-28T00:37:09.269746+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527457+00:00"
+    },
+    {
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin/",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "source": "official",
+      "published": "2026-10-16",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:09.270115+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527471+00:00"
+    },
+    {
+      "url": "https://openai.com/index/localiza-generative-ai/",
+      "title": "How Localiza reorganized work around generative AI",
+      "source": "official",
+      "published": "2026-10-16",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-28T00:37:09.270048+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527484+00:00"
+    },
+    {
+      "url": "https://openai.com/index/itau-generative-ai/",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "source": "official",
+      "published": "2026-10-16",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-28T00:37:09.269972+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527498+00:00"
+    },
+    {
+      "url": "https://openai.com/index/third-moment-research/",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "source": "official",
+      "published": "2026-10-14",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:09.270327+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527513+00:00"
+    },
+    {
+      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/",
+      "title": "The EU’s next chapter in AI is agentic",
+      "source": "official",
+      "published": "2026-10-14",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:09.270403+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527528+00:00"
+    },
+    {
+      "url": "https://openai.com/index/amp-beyond-coding/",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "source": "official",
+      "published": "2026-10-14",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-28T00:37:09.270260+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-28T00:37:15.527542+00:00"
+    }
+  ],
+  "content_digest": "0324cac0fef8c2230143338604221471e921f77948a0316afe25ea42b5c32310"
+}

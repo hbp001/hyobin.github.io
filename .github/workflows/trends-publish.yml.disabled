@@ -1,0 +1,74 @@
+# INACTIVE TEMPLATE. Rename only after explicit owner approval of daily public
+# metadata cards, Pages permissions, and the repository's Pages publishing source.
+name: Publish AI trends daily
+on:
+  schedule:
+    - cron: '0 0 * * *' # 09:00 Asia/Seoul
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Build and validate only; never deploy'
+        type: boolean
+        default: true
+permissions:
+  contents: read
+concurrency:
+  group: ai-trends-publish
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+      - run: node tests/trends-ui.test.js
+      - name: Read current deployed feed without credentials
+        run: |
+          mkdir -p /tmp/trends
+          trends_http_status=$(curl --silent --show-error --max-time 30 --output /tmp/trends/previous.json --write-out '%{http_code}' https://hbp001.github.io/hyobin.github.io/data/radar.json)
+          if [ "$trends_http_status" = 404 ]; then echo '{}' > /tmp/trends/previous.json; elif [ "$trends_http_status" != 200 ]; then exit 1; fi
+      - run: python scripts/trends.py refresh --previous /tmp/trends/previous.json --output /tmp/trends/radar.json
+      - id: compare
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from scripts.trends import digest
+          old=json.loads(Path('/tmp/trends/previous.json').read_text())
+          new=json.loads(Path('/tmp/trends/radar.json').read_text())
+          changed=not isinstance(old.get('items'), list) or digest(old) != new['content_digest']
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
+              out.write('changed=' + str(changed).lower() + '\n')
+          PY
+      - run: python scripts/trends.py stage --input /tmp/trends/radar.json --output /tmp/trends/site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: trends-publication-preview-${{ github.run_id }}
+          path: /tmp/trends/radar.json
+          retention-days: 7
+      - uses: actions/upload-pages-artifact@v4
+        if: steps.compare.outputs.changed == 'true' && vars.AI_TRENDS_AUTOPUBLISH == 'approved' && (github.event_name == 'schedule' || inputs.dry_run == false)
+        with:
+          path: /tmp/trends/site
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main' && needs.build.outputs.changed == 'true' && vars.AI_TRENDS_AUTOPUBLISH == 'approved' && (github.event_name == 'schedule' || inputs.dry_run == false)
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
