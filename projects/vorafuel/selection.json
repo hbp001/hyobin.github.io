@@ -1,0 +1,62 @@
+{
+  "eligible_complete_cases": 75,
+  "winning_cases": 8,
+  "selected_cases": 4,
+  "selection": "Post-hoc: beats RF and Chronos-2 in MAE and absolute 6h total error; rank by minimum MAE advantage, forecast windows non-overlapping.",
+  "scope": "development validation; seed13 proposal/RF; seed0 Chronos-2; not generalization evidence",
+  "cases": [
+    {
+      "id": "Case 01",
+      "improvement_percent": {
+        "RF": {
+          "mae": 51.33885284432542,
+          "total": 74.71725635140132
+        },
+        "Chronos-2": {
+          "mae": 92.67791317204802,
+          "total": 96.19568129866167
+        }
+      }
+    },
+    {
+      "id": "Case 02",
+      "improvement_percent": {
+        "RF": {
+          "mae": 15.970056352315465,
+          "total": 93.9153904506426
+        },
+        "Chronos-2": {
+          "mae": 86.83232275484494,
+          "total": 99.35188545838741
+        }
+      }
+    },
+    {
+      "id": "Case 03",
+      "improvement_percent": {
+        "RF": {
+          "mae": 29.061602298116817,
+          "total": 81.71643964904513
+        },
+        "Chronos-2": {
+          "mae": 58.29686724001473,
+          "total": 88.73327924292576
+        }
+      }
+    },
+    {
+      "id": "Case 04",
+      "improvement_percent": {
+        "RF": {
+          "mae": 12.810737410470207,
+          "total": 71.53600118705614
+        },
+        "Chronos-2": {
+          "mae": 51.12090232606343,
+          "total": 84.82282471696018
+        }
+      }
+    }
+  ],
+  "privacy": "Only rendered videos and posters are published: selected actual geographic tracks and physical fuel results, without absolute dates or vessel identifiers. Raw source arrays and model weights remain outside this repository."
+}
