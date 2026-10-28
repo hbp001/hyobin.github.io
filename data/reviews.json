@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "url": "https://arxiv.org/abs/2610.35193",
+      "title": "Trustworthy Recursive Self-Improvement in the Era of Large Models: Foundation, Risks, Evaluation and Open Challenges",
+      "display_title": "자기개선 에이전트, 성능 점수보다 검증 체계를 먼저 설계하자",
+      "source": "arxiv",
+      "published": "2026-10-26",
+      "collected_at": "2026-10-28T00:00:00Z",
+      "reviewed_at": "2026-10-28T00:00:00Z",
+      "verification": "verified",
+      "authorship": "reading-note",
+      "categories": ["agents", "trust"],
+      "evidence_url": "https://arxiv.org/html/2610.35193v1#S7.SS2",
+      "summary": "대규모 모델의 재귀적 자기개선을 다루는 arXiv v1 서베이 읽기 노트. 진단·후보 생성·평가·적용뿐 아니라 개선 메커니즘 자체의 변경도 검토한다. 실제·지속적 개선, 제약 보존, 유효한 감독을 함께 평가해야 한다.",
+      "limitations": "학회·저널 게재 정보가 없는 프리프린트 서베이이며 성능 향상 실험 결과로 해석하면 안 된다. 좋은 후속 버전만으로 개선 절차 자체의 우월성을 주장할 수 없다. 본인 연구 실적이 아니다.",
+      "interview_question": "내부 점수가 향상돼도 배포하지 않아야 하는 경우는? 에이전트와 개선 알고리즘의 개선을 어떻게 분리 검증하며, 메모리까지 변경되면 롤백 범위는 어디까지인가?",
+      "application_idea": "설계 제안·미실행: 프롬프트와 메모리 버전 및 승인 근거를 기록하고 개발·승인·독립 보고 평가를 분리한다. 보안 회귀·비용·롤백을 추적하며 동일 초기 상태와 예산으로 개선 절차를 비교한다."
+    }
+  ]
+}

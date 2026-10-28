@@ -1,0 +1,31 @@
+name: AI trends dry run
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: ai-trends-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+      - run: node tests/trends-ui.test.js
+      - run: python scripts/trends.py refresh --output /tmp/trends/radar.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: trends-dry-run-${{ github.run_id }}
+          path: /tmp/trends/radar.json
+          retention-days: 7
+          if-no-files-found: error

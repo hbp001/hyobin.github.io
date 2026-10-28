@@ -276,6 +276,7 @@ body.ko p[data-ko],body.ko div[data-ko]{display:block}
   .exp{grid-template-columns:1fr}
 }
 </style>
+<link rel="stylesheet" href="styles/trends.css">
 </head>
 <body>
 
@@ -541,44 +542,18 @@ body.ko p[data-ko],body.ko div[data-ko]{display:block}
     <div class="radar">
       <div class="radar-top">
         <div>
-          <span class="mono">05 — Auto-updating</span>
+          <span class="mono">05 — Research reading notes</span>
           <!-- ▼▼ EDIT: 시그널 섹션 제목 ▼▼ -->
           <h2><span data-en>Signals from the Frontier</span><span data-ko>경계에서 오는 신호들</span></h2>
-          <p><span data-en>A daily sweep across arXiv, Hugging Face, corporate AI blogs and conference deadlines — filtered to my keywords, summarized, published here automatically. Every card links to its source.</span><span data-ko>arXiv, Hugging Face, 기업 AI 블로그, 학회 마감일을 매일 훑어 제 관심 키워드로 걸러내고 요약해 자동 게시합니다. 모든 카드는 원본으로 바로 연결됩니다.</span></p>
+          <p><span data-en>AI reading notes and source-matched metadata for interview preparation. Each card separates bibliographic checks from commentary review. Application ideas are proposals, not my research results.</span><span data-ko>취업 준비용 AI 트렌드입니다. 자동 수집 카드의 서지 대조와 해설의 원문 검토를 구분합니다. 내용 미검토 카드에는 요약을 만들지 않으며, 적용 아이디어는 미실행 제안입니다.</span></p>
         </div>
-        <div class="live"><span class="pulse"></span> AUTO · DAILY 09:00 KST</div>
+        <div class="live">AI TRENDS · METADATA / READING NOTES</div>
       </div>
-      <!-- ▼▼ EDIT: 시그널 피드 (실제 운영시엔 radar.json이 이 자리를 채웁니다) ▼▼ -->
-      <div class="feed" id="feed">
-        <a class="item" href="https://arxiv.org/list/cs.CV/recent" target="_blank" rel="noopener">
-          <span class="src arxiv">arXiv</span>
-          <span class="ttl">Blueprint-Conditioned 3D Structure Reconstruction with Symbolic Priors<small><span data-en>Matches: drawing-to-3D · multi-task · reconstruction</span><span data-ko>매칭: 도면→3D · 멀티태스크 · 복원</span></small></span>
-          <span class="when">2h ago</span><span class="go">↗</span>
-        </a>
-        <a class="item" href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener">
-          <span class="src hf">HF</span>
-          <span class="ttl">New release · world model with controllable physics rollout<small><span data-en>Matches: world model · physical AI · simulation</span><span data-ko>매칭: 월드 모델 · 피지컬 AI · 시뮬레이션</span></small></span>
-          <span class="when">6h ago</span><span class="go">↗</span>
-        </a>
-        <a class="item" href="https://blog.google/technology/ai/" target="_blank" rel="noopener">
-          <span class="src news">News</span>
-          <span class="ttl">Robotics lab × foundation-model company announce embodied AI partnership<small><span data-en>Matches: industry collaboration · physical AI</span><span data-ko>매칭: 산업 협업 · 피지컬 AI</span></small></span>
-          <span class="when">1d ago</span><span class="go">↗</span>
-        </a>
-        <a class="item" href="https://cvpr.thecvf.com/" target="_blank" rel="noopener">
-          <span class="src cfp">CFP</span>
-          <span class="ttl">CVPR 2027 — abstract registration deadline<small><span data-en>Tracked: 3 deadlines within 90 days</span><span data-ko>추적 중: 90일 내 마감 3건</span></small></span>
-          <span class="when">D-84</span><span class="go">↗</span>
-        </a>
-        <a class="item" href="https://arxiv.org/list/cs.GR/recent" target="_blank" rel="noopener">
-          <span class="src arxiv">arXiv</span>
-          <span class="ttl">Unified Motion Priors for Frame Interpolation in Hand-Drawn Animation<small><span data-en>Matches: in-betweening · cel animation · generation</span><span data-ko>매칭: 인비트위닝 · 셀 애니메이션 · 생성</span></small></span>
-          <span class="when">1d ago</span><span class="go">↗</span>
-        </a>
+      <div id="trendFilters" class="tags" role="group" aria-label="AI 트렌드 카테고리" style="margin-bottom:20px"></div>
+      <div class="feed" id="feed" aria-live="polite">
+        <p class="item">서지 대조 자료를 불러오는 중입니다.</p>
       </div>
-      <div class="radar-foot" id="feedFoot">
-        ⓘ <span data-en>Sample data — the live pipeline runs on GitHub Actions and commits a JSON feed each morning.</span><span data-ko>샘플 데이터입니다 — 실제 파이프라인은 GitHub Actions에서 매일 아침 JSON 피드를 커밋합니다.</span>
-      </div>
+      <div class="radar-foot" id="feedFoot">원문 링크와 짧은 자체 요약만 제공합니다. 수집 후보는 검토 후 게시합니다.</div>
     </div>
   </div>
 </section>
@@ -738,49 +713,7 @@ document.querySelectorAll('.axis, .proj, .philo-item, .item, .exp-card, .gal .me
   io.observe(el);
 });
 
-/* ── Signals 피드 ────────────────────────────────────
-   data/radar.json 이 있으면 실제 데이터로 교체하고,
-   없으면 위에 적힌 샘플 마크업을 그대로 둡니다.        */
-const KIND = {arxiv:['arXiv','arxiv'], hf:['HF','hf'], news:[null,'news'], cfp:['CFP','cfp']};
-
-function ago(iso){
-  if(!iso) return '';
-  const d = (Date.now() - new Date(iso)) / 36e5;
-  if(d < 1)  return Math.max(1, Math.round(d*60)) + 'm ago';
-  if(d < 24) return Math.round(d) + 'h ago';
-  return Math.round(d/24) + 'd ago';
-}
-const esc = s => String(s ?? '').replace(/[<>&"]/g, c =>
-  ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
-
-fetch('data/radar.json', {cache:'no-store'})
-  .then(r => r.ok ? r.json() : Promise.reject('no feed'))
-  .then(d => {
-    if(!d.items || !d.items.length) return;
-    document.getElementById('feed').innerHTML = d.items.map(it => {
-      const [label, cls] = KIND[it.kind] || [null, 'news'];
-      const a = it.analysis || {};
-      // LLM 요약이 있으면 그것을, 없으면 매칭 키워드를 보조 줄에 표시
-      const sub = a.headline_ko
-        ? `${esc(a.headline_ko)}${a.why_ko ? ' · ' + esc(a.why_ko) : ''}`
-        : (it.matched || []).length ? '매칭: ' + it.matched.map(esc).join(' · ') : '';
-      const also = (it.also_covered || []).length
-        ? `<br><span style="opacity:.55">↳ 함께 다룸: ${it.also_covered.map(x=>esc(x.source)).join(', ')}</span>` : '';
-      const when = it.kind === 'cfp' ? esc(it.summary) : ago(it.published);
-      return `<a class="item" href="${esc(it.url)}" target="_blank" rel="noopener">
-        <span class="src ${cls}">${esc(label || it.source).slice(0,10)}</span>
-        <span class="ttl">${esc(it.title)}<small>${sub}${also}</small></span>
-        <span class="when">${when}</span><span class="go">↗</span>
-      </a>`;
-    }).join('');
-
-    const when = new Date(d.generated_at).toLocaleString('ko-KR',
-      {month:'long', day:'numeric', hour:'2-digit', minute:'2-digit', timeZone:'Asia/Seoul'});
-    document.getElementById('feedFoot').innerHTML =
-      `ⓘ ${when} 자동 수집 · ${d.count}건` +
-      (d.stats ? ` · 중복 ${d.stats.merged_exact + d.stats.merged_fuzzy}건 병합됨` : '');
-  })
-  .catch(() => {/* 샘플 유지 */});
+/* Signals are rendered independently by scripts/trends-ui.js. */
 
 /* ── GitHub integration ─────────────────────────────── */
 document.getElementById('ghLink').href = `https://github.com/${GITHUB_USERNAME}`;
@@ -821,5 +754,7 @@ fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=u
     document.getElementById('ghCap').textContent = 'CONTRIBUTION ACTIVITY · @' + GITHUB_USERNAME.toUpperCase();
   });
 </script>
+<script src="scripts/trends-ui.js" defer></script>
 </body>
 </html>
+
