@@ -1,31 +1,30 @@
-# VORAFuel portfolio showcase
+# VORAFuel result videos
 
-Bilingual static project page for Hyobin Park. Serve the repository root over
-HTTP, then open `projects/vorafuel/`. No build step or external JS dependency.
+The results are embedded in the existing bilingual portfolio at `index.html#github`.
+The old project-page URL redirects to that section; there is no separate landing page.
 
-The interactive canvas and both 36-second MP4 editions use the same saved
-public-showcase records. Playback reveals evaluation GT and the observed vessel
-track; it does not run inference or update weights. Future GT is never an input.
+The two 36-second films show the same four selected validation examples. Actual
+GPS positions are rendered over Natural Earth 1:50m land boundaries, with vessel
+operating values, forecast wave height and saved fuel predictions. Future
+operating observations and GT are displayed for replay and comparison, not fed
+into the original forecast. The highlighted prediction is the corresponding
+30-minute bin of one saved forecast, not a new online prediction.
 
-## Selection and disclosure
+The source dataset, raw coordinate records, renderer inputs and trained weights
+are not included in this repository. The films contain the selected geographic
+tracks and physical fuel results requested for the public demonstration, with
+absolute dates and vessel identifiers omitted. Code is linked to hbp001/VORAFuel.
 
-`selection.json` documents post-hoc selection: four non-overlapping validation
-windows from eight qualifying cases among 75 complete windows. Each selected
-case improves both bin MAE and absolute total-consumption error over RF and
-fuel-only Chronos-2. This gallery is not a claim of overall superiority.
+## Selection
 
-`showcase.json` contains transformed derived patterns. Absolute dates,
-geographic coordinates, physical distances and consumption scales are omitted.
-Fuel curves share a per-case normalization; input variables use separate display
-scales. The route is a translated, uniformly scaled schematic, not a navigation
-map. Missing values are preserved. This transformation is not a guarantee of
-anonymity. Source datasets and trained weights are not included and remain
-private, available on request subject to provider permissions.
+Four non-overlapping windows were selected after evaluation from eight qualifying
+cases among 75 complete validation windows. Each selected case improves both
+bin MAE and absolute total-consumption error over RF and fuel-only Chronos-2.
+This is a success-case gallery, not aggregate performance evidence. VORAFuel/RF
+use seed 13 and Chronos-2 uses seed 0. See `selection.json` for the selection rule.
 
-## Verification (2026-10-28)
+## Map attribution
 
-- Recomputed all four MAE and total-error comparisons from the displayed arrays.
-- Chrome: four case buttons, play/reset, English/Korean navigation and language
-  persistence via URL passed without page errors.
-- Mobile viewport (390 px): no document overflow; fullscreen control available.
-- MP4: 1600 x 900, 24 fps, 36 seconds per language; no audio.
+Natural Earth, public-domain 1:50m land polygons:
+https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_land.geojson
+This is a geographic illustration, not a navigation chart. GPS gaps are not interpolated.

@@ -58,5 +58,5 @@
       }
     }
   ],
-  "privacy": "Absolute dates, coordinates, distances and physical consumption scales removed. Derived real-data patterns remain; not a guarantee of anonymization."
+  "privacy": "Only rendered videos and posters are published: selected actual geographic tracks and physical fuel results, without absolute dates or vessel identifiers. Raw source arrays and model weights remain outside this repository."
 }
