@@ -420,11 +420,26 @@ body.ko p[data-ko],body.ko div[data-ko]{display:block}
   <div class="wrap">
     <div class="sec-head">
       <span class="mono">03 — Flagship Work</span>
-      <h2><span data-en>Three projects with their own room</span><span data-ko>독립된 방을 가진 세 개의 프로젝트</span></h2>
-      <p><span data-en>Everything else is grouped by domain. These three get a full page each — idea, method, and a demo you can actually play with.</span><span data-ko>나머지는 분야별로 묶여 있고, 이 셋은 각각 전용 페이지를 가집니다 — 아이디어, 방법론, 직접 만져볼 수 있는 데모까지.</span></p>
+      <h2><span data-en>Selected projects, from idea to experience</span><span data-ko>아이디어에서 경험으로, 대표 프로젝트</span></h2>
+      <p><span data-en>Explore the problem, the method, and the result through each project's own page.</span><span data-ko>프로젝트별 전용 페이지에서 문제 정의, 방법론과 결과를 확인할 수 있습니다.</span></p>
     </div>
     <!-- ▼▼ EDIT: 대표 프로젝트 3개 ▼▼ -->
     <div class="feat">
+
+      <article class="proj">
+        <div class="proj-body">
+          <span class="badge pub">Research Prototype · Maritime AI</span>
+          <h3>VORAFuel</h3>
+          <div class="krsub"><span data-en>Observation-aware ship fuel forecasting</span><span data-ko>관측 가용성을 고려한 선박 연료소모량 예측</span></div>
+          <p><span data-en><b>Why:</b> Anticipate fuel demand despite delayed and missing observations.<br><b>Method:</b> Learn time–variable relations and decode fuel paths under operating conditions.<br><b>Contribution:</b> Connect data quality control, weather integration and interval-to-total forecasting.</span><span data-ko><b>필요성:</b> 관측 지연·결측 상황에서도 연료 수요를 미리 판단합니다.<br><b>제안:</b> 시간·변수 관계와 운항조건을 결합해 소비 경로를 예측합니다.<br><b>기여:</b> 자료 정제·기상 정합부터 구간·누적 소비 예측까지 연결합니다.</span></p>
+          <a class="proj-link" id="vorafuelLink" href="projects/vorafuel/"><span data-en>Watch selected forecasts &amp; explore the method</span><span data-ko>선정 예측 영상과 방법론 보기</span> →</a>
+        </div>
+        <div class="demo" style="background:#071820">
+          <div class="demo-label mono" style="color:#63efc4"><span data-en>Selected replay · not aggregate evidence</span><span data-ko>선정 사례 재생 · 전체 성능과 구분</span></div>
+          <video id="vorafuelFilm" controls playsinline preload="metadata" poster="projects/vorafuel/assets/poster-en.jpg" style="width:100%;display:block;border-radius:12px;margin:12px 0" aria-label="VORAFuel selected forecast demonstrations"><source src="projects/vorafuel/assets/vorafuel-en.mp4" type="video/mp4"></video>
+          <div class="demo-bar" style="color:#9eb6c2"><span data-en>Observed track · past input · forecast + GT</span><span data-ko>실측 항적 · 과거 입력 · 예측과 정답</span></div>
+        </div>
+      </article>
 
       <article class="proj">
         <div class="proj-body">
@@ -601,6 +616,8 @@ function setLang(l, btn){
   document.documentElement.lang = l;
   document.querySelectorAll('.lang button').forEach(b => b.classList.remove('on'));
   btn.classList.add('on');
+  const fuelFilm=document.getElementById('vorafuelFilm');
+  if(fuelFilm){fuelFilm.pause();fuelFilm.src='projects/vorafuel/assets/vorafuel-'+l+'.mp4';fuelFilm.poster='projects/vorafuel/assets/poster-'+l+'.jpg';document.getElementById('vorafuelLink').href='projects/vorafuel/?lang='+l;}
 }
 
 /* 구제 로직 — 슬롯 "바깥"에 실수로 넣은 이미지를 앞의 빈 슬롯 안으로 자동 이동 */
@@ -718,6 +735,7 @@ document.querySelectorAll('.axis, .proj, .philo-item, .item, .exp-card, .gal .me
 /* ── GitHub integration ─────────────────────────────── */
 document.getElementById('ghLink').href = `https://github.com/${GITHUB_USERNAME}`;
 const chart = document.getElementById('ghChart');
+if(chart){
 chart.src = `https://ghchart.rshah.org/C98A93/${GITHUB_USERNAME}`;
 chart.onerror = () => {
   const ph = document.createElement('div');
@@ -725,9 +743,10 @@ chart.onerror = () => {
   ph.textContent = 'CONTRIBUTION GRAPH · CONNECT GITHUB TO ACTIVATE';
   chart.replaceWith(ph);
 };
+}
 
 const box = document.getElementById('repos');
-fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`)
+if(box) fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`)
   .then(r => r.ok ? r.json() : Promise.reject(r.status))
   .then(all => {
     let list = all.filter(r => !r.fork);
@@ -751,7 +770,7 @@ fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=u
       <a href="https://github.com/${GITHUB_USERNAME}" target="_blank"
          style="color:var(--plum);border-bottom:1px solid var(--rose)">github.com/${GITHUB_USERNAME}</a>
       에서 직접 확인해 주세요.</div>`;
-    document.getElementById('ghCap').textContent = 'CONTRIBUTION ACTIVITY · @' + GITHUB_USERNAME.toUpperCase();
+    if(document.getElementById('ghCap')) document.getElementById('ghCap').textContent = 'CONTRIBUTION ACTIVITY · @' + GITHUB_USERNAME.toUpperCase();
   });
 </script>
 <script src="scripts/trends-ui.js" defer></script>
