@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28T23:59:53.173539+00:00",
-  "count": 44,
+  "generated_at": "2026-10-31T23:59:18.046866+00:00",
+  "count": 46,
   "items": [
     {
       "url": "https://arxiv.org/abs/2610.35193",
@@ -22,8 +22,560 @@
       "limitations": "학회·저널 게재 정보가 없는 프리프린트 서베이이며 성능 향상 실험 결과로 해석하면 안 된다. 좋은 후속 버전만으로 개선 절차 자체의 우월성을 주장할 수 없다. 본인 연구 실적이 아니다.",
       "interview_question": "내부 점수가 향상돼도 배포하지 않아야 하는 경우는? 에이전트와 개선 알고리즘의 개선을 어떻게 분리 검증하며, 메모리까지 변경되면 롤백 범위는 어디까지인가?",
       "application_idea": "설계 제안·미실행: 프롬프트와 메모리 버전 및 승인 근거를 기록하고 개발·승인·독립 보고 평가를 분리한다. 보안 회귀·비용·롤백을 추적하며 동일 초기 상태와 예산으로 개선 절차를 비교한다.",
-      "source_checked_at": "2026-10-28T23:59:53.173533+00:00",
+      "source_checked_at": "2026-10-31T23:59:18.046860+00:00",
       "commentary_review": "reviewed"
+    },
+    {
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+      "title": "Making it easier for websites to express AI training preferences",
+      "source": "official",
+      "published": "2026-10-30",
+      "categories": [
+        "training"
+      ],
+      "collected_at": "2026-10-31T23:59:03.675611+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.046940+00:00"
+    },
+    {
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+      "title": "Community safety report and new protections for teens",
+      "source": "official",
+      "published": "2026-10-30",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:59:03.675666+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.046971+00:00"
+    },
+    {
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+      "title": "How we detect frontier model misalignment",
+      "source": "official",
+      "published": "2026-10-29",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:59:03.675755+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.046993+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40647",
+      "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.581786+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047016+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40644",
+      "title": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.581814+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047036+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40641",
+      "title": "From extreme weather to agricultural consequences with agentic AI",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.581865+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047054+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40640",
+      "title": "SonoWorld4D: From One Video to a 4D Audio-Visual Scene via Diffusion Synchronization",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.581891+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047072+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40637",
+      "title": "world2vec: Mechanistic world models through latent dynamics learning",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.581917+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047088+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40627",
+      "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582055+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047106+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40618",
+      "title": "An ODE-based Sampler for Discrete Diffusion Models",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582105+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047123+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40616",
+      "title": "Difficulty Calibration Across Time for Membership Inference in Diffusion Models",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation",
+        "mlops"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582229+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047140+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40614",
+      "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents",
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582269+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047158+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40613",
+      "title": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582297+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047177+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40611",
+      "title": "When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents",
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582326+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047195+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40607",
+      "title": "Fight World Model: Customizable Combat through Visual Interaction Proxies",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582353+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047212+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40589",
+      "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582406+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047229+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40588",
+      "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582433+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047246+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40580",
+      "title": "RADIOlogy: A Single-Pass Approach to Training-Free Zero-Shot Anomaly Detection",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "training"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582516+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047263+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40578",
+      "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582544+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047282+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40565",
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582647+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047299+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40564",
+      "title": "Training Foundation Models with a Single Algorithm",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "training"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582716+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047315+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40563",
+      "title": "Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "training"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582750+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047335+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40556",
+      "title": "Advancing Clinical Genomic Analysis with a Skill-Centred Agent",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582799+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047351+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40551",
+      "title": "Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582823+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047367+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40545",
+      "title": "Retrieval as Traversal: Value-Indexed Memory for Stateful Long-Context Agents",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582847+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047384+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40544",
+      "title": "Machine Learning-Based Detection of Mobile Money Scan Messages in Ghana: A Comparative Evaluation of Naive Bayes, Support Vector Machine, and Randon Forest Classifiers",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:58:55.582874+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047404+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40533",
+      "title": "Homebrewed SLMs: Autoregressive and Masked Diffusion Language Models Built at Home for Portuguese",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583012+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047422+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40532",
+      "title": "BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "trust",
+        "multimodal"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583039+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047439+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40525",
+      "title": "CrossWeave: Cross-Modal Scene and Instance Retrieval from Sparse 2D-3D Alignment",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583109+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047456+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40518",
+      "title": "IndicIPR-QA: A Benchmark for Extractive Question Answering on Indian IPR Laws",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583135+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047473+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40516",
+      "title": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "trust",
+        "training"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583165+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047490+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40511",
+      "title": "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583192+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047508+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40503",
+      "title": "Algebraic World Model: From Exploration to Proofs",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583242+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047524+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40499",
+      "title": "Numerical Integration on Bounded Domains via Learned Reflected Diffusions",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583266+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047539+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40495",
+      "title": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "generation"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583291+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047559+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40492",
+      "title": "Agentic University: Collaborative Agents for Personalized Learning",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583345+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047578+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40488",
+      "title": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "agents",
+        "trust"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583395+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047596+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40485",
+      "title": "The Precision Wall: An Optimizer-Dependent Boundary for Optimization under Power-Law Measurement Spectra",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "training"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583449+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047614+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40483",
+      "title": "Preserving Utility in Continual LLM Unlearning via Orthogonal Projections",
+      "source": "arxiv",
+      "published": "2026-10-29",
+      "categories": [
+        "mlops"
+      ],
+      "collected_at": "2026-10-31T23:58:55.583476+00:00",
+      "verification": "metadata-verified",
+      "commentary_review": "not-reviewed",
+      "authorship": "source-metadata",
+      "source_checked_at": "2026-10-31T23:59:18.047631+00:00"
     },
     {
       "url": "https://openai.com/index/legora/",
@@ -37,447 +589,7 @@
       "verification": "metadata-verified",
       "commentary_review": "not-reviewed",
       "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173596+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37652",
-      "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "trust"
-      ],
-      "collected_at": "2026-10-28T23:59:27.095341+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173661+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37651",
-      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T23:59:27.095378+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173686+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37648",
-      "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096106+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173707+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37647",
-      "title": "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096134+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173726+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37642",
-      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "agents",
-        "generation",
-        "mlops"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096185+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173744+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37633",
-      "title": "Repurposing Video Diffusion Transformers for Cross-View Temporal Object Correspondence",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096211+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173762+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37631",
-      "title": "What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096234+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173781+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37626",
-      "title": "Know, then Draw: A New Learning Paradigm for Visual Generation",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096258+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173871+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37624",
-      "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096287+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173893+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37609",
-      "title": "EnvSched: Environment-Aware Scheduling for Rollout-Efficient Agent Reinforcement Learning",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "agents",
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096365+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173914+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37599",
-      "title": "MoI-Bench: A Benchmark for Image Generation and Editing on Mobile Devices",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "trust",
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096414+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173934+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37588",
-      "title": "Understanding the limits of latent world models",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096461+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173951+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37584",
-      "title": "REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096510+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173968+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37583",
-      "title": "Zero-Shot Multimodal Event Spotting in Soccer Broadcasts",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "multimodal"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096535+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.173985+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37576",
-      "title": "The Noise Plane: A Diffusion Bridge Across Exponent and Dispersion",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096645+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174002+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37571",
-      "title": "TeamGym: A Gym for Team Decision-Making by AI Agents with Distributed Information",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096672+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174021+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37567",
-      "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "agents",
-        "multimodal"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096721+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174038+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37566",
-      "title": "ReferStream: Interactive Subject Injection for Streaming Video Generation",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096743+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174057+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37563",
-      "title": "Pneuma: A Large-Scale Real-World Time Series Benchmark for Commercial Aircraft Predictive Maintenance",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "trust"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096768+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174077+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37553",
-      "title": "Collective Dynamics of Self-Reinforcement: How Cross-Task Coupling Drives Policy Collapse in Unsupervised RLVR",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096820+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174095+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37550",
-      "title": "Kinematic Constraint-Referenced Evaluation for Articulated Object Manipulation",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "trust"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096843+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174112+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37545",
-      "title": "GroundControl: Satellite-Conditioned Multi-View Diffusion for Reconstruction-Free Novel View Synthesis",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.096890+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174129+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37504",
-      "title": "Strategyproof Deep Reinforcement Learning for Online Resource Allocation",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097039+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174146+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37503",
-      "title": "ALADDIN: Adversarial Latent Diffusion Distillation for One-Step Identity Swapping",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097062+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174164+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37484",
-      "title": "Teach reality, not ethics: a drop-in continued-pretraining corpus installs coupled human-biosphere-AI welfare dispositions across model families",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097140+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174184+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37482",
-      "title": "From Interaction to Capability: Task Advancement as State and Supervision for GUI Agents",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097165+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174202+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37481",
-      "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "trust",
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097216+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174220+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37480",
-      "title": "Keeping Inference in the Radio: Design and Measurement of a Spiking Accelerator for mmWave ISAC Activity Recognition",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "mlops"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097253+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174239+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37473",
-      "title": "QD-PINN:A Physics-Informed Neural Network Approach to Bayesian Quickest Detection in High-Dimensional Diffusions",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097305+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174256+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37470",
-      "title": "Autonomous fixed-wing interception using reinforcement learning",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097386+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174272+00:00"
-    },
-    {
-      "url": "https://arxiv.org/abs/2610.37465",
-      "title": "What Carries Forward? Pretraining Disclosure Across Language Model Releases",
-      "source": "arxiv",
-      "published": "2026-10-27",
-      "categories": [
-        "training"
-      ],
-      "collected_at": "2026-10-28T23:59:27.097412+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174290+00:00"
+      "source_checked_at": "2026-10-31T23:59:18.047660+00:00"
     },
     {
       "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
@@ -491,7 +603,7 @@
       "verification": "metadata-verified",
       "commentary_review": "not-reviewed",
       "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174323+00:00"
+      "source_checked_at": "2026-10-31T23:59:18.047688+00:00"
     },
     {
       "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership/",
@@ -505,7 +617,7 @@
       "verification": "metadata-verified",
       "commentary_review": "not-reviewed",
       "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174389+00:00"
+      "source_checked_at": "2026-10-31T23:59:18.047751+00:00"
     },
     {
       "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
@@ -519,7 +631,7 @@
       "verification": "metadata-verified",
       "commentary_review": "not-reviewed",
       "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174421+00:00"
+      "source_checked_at": "2026-10-31T23:59:18.047780+00:00"
     },
     {
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
@@ -533,7 +645,7 @@
       "verification": "metadata-verified",
       "commentary_review": "not-reviewed",
       "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174455+00:00"
+      "source_checked_at": "2026-10-31T23:59:18.047808+00:00"
     },
     {
       "url": "https://openai.com/index/building-chatgpt-ad-stack/",
@@ -547,92 +659,8 @@
       "verification": "metadata-verified",
       "commentary_review": "not-reviewed",
       "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174485+00:00"
-    },
-    {
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin/",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "source": "official",
-      "published": "2026-10-16",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T00:37:09.270115+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174513+00:00"
-    },
-    {
-      "url": "https://openai.com/index/localiza-generative-ai/",
-      "title": "How Localiza reorganized work around generative AI",
-      "source": "official",
-      "published": "2026-10-16",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T00:37:09.270048+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174538+00:00"
-    },
-    {
-      "url": "https://openai.com/index/itau-generative-ai/",
-      "title": "How Itaú is building generative AI for its entire customer base",
-      "source": "official",
-      "published": "2026-10-16",
-      "categories": [
-        "generation"
-      ],
-      "collected_at": "2026-10-28T00:37:09.269972+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174565+00:00"
-    },
-    {
-      "url": "https://openai.com/index/third-moment-research/",
-      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-      "source": "official",
-      "published": "2026-10-14",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T00:37:09.270327+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174590+00:00"
-    },
-    {
-      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/",
-      "title": "The EU’s next chapter in AI is agentic",
-      "source": "official",
-      "published": "2026-10-14",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T00:37:09.270403+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174642+00:00"
-    },
-    {
-      "url": "https://openai.com/index/amp-beyond-coding/",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "source": "official",
-      "published": "2026-10-14",
-      "categories": [
-        "agents"
-      ],
-      "collected_at": "2026-10-28T00:37:09.270260+00:00",
-      "verification": "metadata-verified",
-      "commentary_review": "not-reviewed",
-      "authorship": "source-metadata",
-      "source_checked_at": "2026-10-28T23:59:53.174672+00:00"
+      "source_checked_at": "2026-10-31T23:59:18.047836+00:00"
     }
   ],
-  "content_digest": "93fd559af05d5977f9d7abdbf67e88751e4d8da3b59a9fd9ce4c197ff948fd6a"
+  "content_digest": "bfff3875d9b448189168e1457c0d6925b4072ed6a74c1c54159cefc6bc928c95"
 }
